@@ -1,0 +1,105 @@
+{
+  "postgres": {
+    "database": "stand",
+    "host": "10.59.44.165",
+    "user": "postgres",
+    "password": "postgres",
+    "port": 5432
+  },
+
+  "totp": "ThisIsAKeyFor2FA",
+
+  "colors": {
+    "ИНИЦИАЛИЗАЦИЯ": [
+      "0xdddddd",
+      "0xa5a5a5"
+    ],
+    "АВАРИЯ": [
+      "0xede51f",
+      "0xffad33"
+    ],
+    "ПОРОГ 1": [
+      "0xf5404b",
+      "0xb6133a"
+    ],
+    "ПОРОГ 2": [
+      "0xf5404b",
+      "0xb6133a"
+    ],
+    "НОРМА": [
+      "0x4fe39c",
+      "0x1bbdb3"
+    ],
+    "ОБРЫВ": [
+      "0xf5404b",
+      "0xb6133a"
+    ],
+    "ПРЕВЫШЕНИЕ СИГНАЛА": [
+      "0x84d7ff",
+      "0x3bbaf7"
+    ]
+  },
+
+  "devices": {
+    "ДГС ЭРИС-210": "dgs210",
+    "ДГС ЭРИС-230": "dgs230",
+    "Advant": "advant",
+    "ERIS XS": "xs",
+    "DCT": "dct",
+    "ОВЕН ПВТ100": "pvt100"
+  },
+
+  "stands": {
+    "Ресурсные испытания": "resources_stand",
+    "Длинная линия": "long_stand",
+    "Ресурсные испытания DCT": "dct_stand"
+  },
+
+  "connections": [
+    {
+      "name": "websocket",
+      "host": "10.59.44.165",
+      "port": 8765,
+      "timeout": 0.025
+    },
+
+    {
+      "name": "sgm",
+      "host": "localhost",
+      "port": 5001,
+      "timeout": 1
+    }
+  ],
+
+  "customer": {
+      "delay": 1,
+      "oxygen": {
+        "amperage": {
+          "min": 15.111,
+          "max": 15.150
+        },
+        "modified_amperage": {
+          "min": 20.9,
+          "max": 20.955
+        },
+        "concentration": {
+          "min": 20.8,
+          "max": 20.955
+        }
+      },
+      "others": {
+        "amperage": {
+          "min": 4,
+          "max": 4.3
+        },
+        "modified_amperage": {
+          "min": 0,
+          "max": 1
+        },
+        "concentration": {
+          "min": 0,
+          "max": 1
+        }
+      }
+  }
+}

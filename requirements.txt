@@ -1,0 +1,7 @@
+sqlalchemy[asyncio]
+flet
+nest_asyncio
+pymodbus
+asyncpg
+pyotp
+websockets
